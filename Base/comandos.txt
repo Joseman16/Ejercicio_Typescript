@@ -1,1 +1,10 @@
-tsc app.ts
+Comandos: 
+
+tsc app.ts (crea el app.js)
+tsc --init (crea el archivo tsconfig.json)
+
+
+tsc --watch 
+tsc -w
+
+tsc app.ts --target ES6 --module ES6
