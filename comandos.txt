@@ -1,0 +1,20 @@
+npm init -y (package.json)
+
+tsc --init (tsconfig)
+
+npm i nodemon (una carpeta con los modulos de "node")
+
+1: En el package.json coloco el dev:
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts"
+  }, 
+
+2: Ejecuto el siguiente comando, haciendo referncia al "dev" que coloque
+-> npm run dev (sale error)
+
+3: Ejecutamos el siguiente comando
+->npm i ts-node
+
+4: npm run dev (sirve para ejecutar el programa ts o el que ayamos configurado en el package.json)
+
