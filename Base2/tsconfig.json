@@ -17,6 +17,7 @@
     "noImplicitAny": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
+    //"ignoreDeprecations": "6.0",
     "skipLibCheck": true
   },
   "include": ["./"],           // Incluye todos los archivos TS en la raíz
