@@ -18,3 +18,8 @@ npm i nodemon (una carpeta con los modulos de "node")
 
 4: npm run dev (sirve para ejecutar el programa ts o el que ayamos configurado en el package.json)
 
+
+
+Otros comandos: 
+Cuando compiles con TypeScript, dile que el módulo debe ser compatible con el navegador:
+-> tsc function.ts --target es6 --module es6

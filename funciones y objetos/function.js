@@ -1,0 +1,14 @@
+//funciones basicas
+(() => {
+    const hero = 'Flash';
+    function returnName() {
+        return hero;
+    }
+    const activateBatiSignal = () => {
+        return 'Batiseñal activada';
+    };
+    console.log(typeof activateBatiSignal);
+    const heroName = returnName();
+})();
+export {};
+//# sourceMappingURL=function.js.map
