@@ -2,11 +2,12 @@
   "compilerOptions": {
     // 🌍 Compatibilidad navegador
     "target": "ES6",
-    "module": "ES6",
+    "module": "amd",
 
     // 🔧 Opciones de salida
     // "outDir": "./dist", // opcional si quieres compilar a otra carpeta
     "sourceMap": true,
+    "outFile":"./main.js",
 
     // 🔒 Chequeos estrictos
     "strict": true,
@@ -18,6 +19,11 @@
     "moduleResolution": "node",
     "skipLibCheck": true
   },
-  "include": ["./"],           // Incluye todos los archivos TS en la raíz
-  "exclude": ["node_modules"]  // Ignora node_modules
+  /*"include": [
+    "node_modules"
+  ],*/           // Incluye todos los archivos TS en la raíz
+  "exclude": 
+  [
+    "node_modules2"
+  ]  // Ignora node_modules
 }

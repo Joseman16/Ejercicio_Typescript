@@ -2,14 +2,17 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    //"outDir": "dist",
+    "rootDir": "./", // Set rootDir to project root to avoid including 'dist' as input
 
+    "target": "es6",
+    "module": "system",         
+    "outFile": "./dist/main.js",
+    // "outFile": "./main.js",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "ES6",
-    "target": "ES6",
+
     "moduleResolution": "node",
+    // "outFile": "./main.js",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -35,11 +38,21 @@
 
     // Recommended Options
     "strict": true,
+    "strictNullChecks": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
+    //"verbatimModuleSyntax": true,
+    //"isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+    "removeComments": true
+  },
+  
+  "include": [
+    "./*.ts",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
