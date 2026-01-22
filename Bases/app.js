@@ -2,7 +2,7 @@
     const a = 10;
     console.log(a);
 })();
-
+export {};
 /*
 message:string = "Hola mundo!";
 //console.log(message);

@@ -20,5 +20,5 @@
     console.log(isSuperman);
     console.log(isBataman);
 })();
-
+export {};
 //# sourceMappingURL=booleans.js.map
