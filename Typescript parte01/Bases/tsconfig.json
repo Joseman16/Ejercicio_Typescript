@@ -1,0 +1,90 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+
+    // ===============================
+    // File Layout
+    // ===============================
+
+    //"rootDir": "./src",     // carpeta donde están los archivos .ts
+    //"outDir": "./dist",     // carpeta donde se generan los .js
+    "outFile": "main.js",
+
+    // ⚠️ NO usar outFile en Node.js
+    // "outFile": "./main.js",
+
+    // ===============================
+    // Environment Settings
+    // ===============================
+    // See also https://aka.ms/tsconfig/module
+
+    "module": "amd",   // necesario para Node.js
+    "target": "es6",
+    "types": [],
+
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+
+    // ===============================
+    // Other Outputs
+    // ===============================
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+
+    // ===============================
+    // Stricter Typechecking Options
+    // ===============================
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+
+    // ===============================
+    // Style Options
+    // ===============================
+
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+
+    // ===============================
+    // Recommended Options
+    // ===============================
+
+    "strict": true,
+
+    // ⚠️ solo usar jsx si trabajas con React
+    // "jsx": "react-jsx",
+
+    // ⚠️ incompatibles con outFile y causaban tus errores
+    // "verbatimModuleSyntax": true,
+    // "isolatedModules": true,
+
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+
+    //"strictNullChecks": false,
+  }
+
+  /*
+  "exclude": [
+    "node_modules2"
+  ],
+  "include": [
+    "node_modules"
+  ]
+  */
+
+
+}
